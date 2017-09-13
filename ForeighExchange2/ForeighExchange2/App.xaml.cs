@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿
 
-using Xamarin.Forms;
+
 
 namespace ForeighExchange2
 {
+    using Xamarin.Forms;
+    using Views;
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
 
-            MainPage = new ForeighExchange2.MainPage();
+            MainPage = new MainView();
         }
 
         protected override void OnStart()
