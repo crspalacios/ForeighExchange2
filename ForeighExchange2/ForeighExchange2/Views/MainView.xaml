@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForeighExchange2.Views.MainView"       
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
-    
-    
+
+
     <ContentPage.Content>
-        
+  
+
         <StackLayout>
             
             <Label 
@@ -15,30 +16,26 @@
                 FontSize="Default"
                 Text="Iniciando">
             </Label>
-            <Label 
+           <Label 
                 Text="Amount">
             </Label>
             <Entry
-                Text="{Binding Amount, Mode=TwoWay}"
+               Text="{Binding Amount, Mode=TwoWay}"
                 Placeholder="Enter the amonut to convert...">
             </Entry>
             <Label 
                 Text="Source rate:">
             </Label>
             <Picker
-                ItemsDisplayBinding="{Binding Name}"
-                ItemsSource="{Binding Rates}"
-                SelecteItem="{Binding SourceRate, Mode=TwoWay}}"
+ 
                 Title="Select a source rate...">
             </Picker>
             <Label 
                 Text="Target rate:">
             </Label>
             <Picker
-                ItemsDisplayBinding="{Binding Name}"
-                ItemsSource="{Binding Rates}"
-                SelecteItem="{Binding TargetRate, Mode=TwoWay}}"
-                Title="Select a Target rate...">
+ 
+                Title="Select a source Targetrate...">
             </Picker>
             <ActivityIndicator
                 IsRunning="{Binding IsRunning, Mode=TwoWay}">

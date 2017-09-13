@@ -67,7 +67,7 @@ namespace ForeighExchange2.ViewModels
             }
             
         }
-        private void Convert()
+        void Convert()
         {
             throw new NotImplementedException();
         }
