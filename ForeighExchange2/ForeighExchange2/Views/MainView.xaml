@@ -27,14 +27,18 @@
                 Text="Source rate:">
             </Label>
             <Picker
- 
+                ItemsDisplayBinding="{Binding Name}"
+                ItemsSource="{Binding Rates}"
+                SelecteItem="{Binding SourceRate, Mode=TwoWay}}"
                 Title="Select a source rate...">
             </Picker>
             <Label 
                 Text="Target rate:">
             </Label>
-            <Picker
- 
+            <Picker         
+                ItemsDisplayBinding="{Binding Name}"
+                ItemsSource="{Binding Rates}"
+                SelecteItem="{Binding TargetRate, Mode=TwoWay}}"
                 Title="Select a source Targetrate...">
             </Picker>
             <ActivityIndicator
